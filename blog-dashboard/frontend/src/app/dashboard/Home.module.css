@@ -1,0 +1,54 @@
+/* Add this to global CSS (styles.css or global.css) */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .blog-form {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0070f3;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:last-child {
+    background-color: #f44336;
+  }
+  

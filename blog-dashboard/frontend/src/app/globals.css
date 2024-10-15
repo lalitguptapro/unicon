@@ -1,0 +1,139 @@
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+li:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog title styling */
+h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Button styling */
+button {
+  margin-right: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Primary button styling */
+button:first-child {
+  background-color: #0070f3;
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Delete button styling */
+button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #c62e26;
+  transform: translateY(-2px);
+}
+
+/* Blog form styling */
+.blog-form {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and textarea styling */
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.blog-form input:focus,
+.blog-form textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+/* Submit button styling in the form */
+.blog-form button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+.blog-form button:hover {
+  background-color: #218838;
+}
+
+/* Image preview styling */
+.imagePreview {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.blog-image {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
