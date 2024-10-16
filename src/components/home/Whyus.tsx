@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import { FaCircleArrowLeft, FaCircleArrowRight } from 'react-icons/fa6'; // Import the icons
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 const Whyus = () => {
   interface Whytype {
@@ -84,7 +85,7 @@ const Whyus = () => {
           <Slider ref={sliderRef} {...sliderSettings}>
             {whyData.map((e, i) => (
               <div key={i} className="text-center p-4">
-                <img src={e.image} alt={e.head} className="mx-auto mb-4 w-16 h-16" />
+                <Image width="50" height="50" src={e.image} alt={e.head} className="mx-auto mb-4 w-16 h-16" />
                 <div className="text-[20px] font-bold">{e.head}</div>
                 <p className="text-sm mt-2">{e.para}</p>
               </div>
@@ -105,7 +106,7 @@ const Whyus = () => {
         <div className="hidden lg:grid grid-cols-12 pt-20 gap-12">
           {whyData.map((e, i) => (
             <div className="col-span-4" key={i}>
-              <img src={e.image} alt={e.head} className="mb-4 w-16 h-16" />
+              <Image width="50" height="50" src={e.image} alt={e.head} className="mb-4 w-16 h-16" />
               <div className="text-[28px]">{e.head}</div>
               <p>{e.para}</p>
             </div>

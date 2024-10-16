@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const Services: React.FC = () => {
   // Define interfaces
@@ -49,8 +50,7 @@ const Services: React.FC = () => {
   ];
 
   // Custom Arrow components for slick
-  const NextArrow = (props: any) => {
-    const { onClick } = props;
+  const NextArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
     return (
       <div
         onClick={onClick}
@@ -61,8 +61,7 @@ const Services: React.FC = () => {
     );
   };
 
-  const PrevArrow = (props: any) => {
-    const { onClick } = props;
+  const PrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
     return (
       <div
         onClick={onClick}
@@ -106,7 +105,9 @@ const Services: React.FC = () => {
       <Slider {...settings} className="service-slider mb-12 relative">
         {serviceData.map((service, index) => (
           <div key={index} className="flex flex-col items-center px-4">
-            <img
+            <Image
+              width="50"
+              height="50"
               src={service.image}
               className="w-24"
               alt={`Service ${index}`}

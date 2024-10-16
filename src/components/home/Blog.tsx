@@ -66,6 +66,7 @@
 
 "use client"; // Add this line to specify that this is a Client Component
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -114,7 +115,7 @@ const Blog = () => {
             key={i}
             className='col-span-4 border-dotted border-2 rounded-md border-primary p-4'
           >
-            <img className='rounded-md' src={e.image} alt={e.title} />
+            <Image className='rounded-md' src={e.image} alt={e.title} />
             <div className='flex justify-between py-4'>
               <div>
                 Category :{" "}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 
@@ -53,7 +54,7 @@ const serviceData: serviceData[] = [
             {
                 serviceData.map((e,i)=>(
                 <div key={i} className='col-span-4 flex flex-col gap-4'>
-                <img src={e.image} className='w-24' />
+                <Image alt='img' src={e.image} className='w-24' />
                 <div className='text-[28px] font-semibold'>{e.head}</div>
                 <p className=''>{e.para}</p></div>
                 ))
@@ -65,7 +66,7 @@ const serviceData: serviceData[] = [
       {images.map((slide, index) => (
         <div className="" key={index}>
           {index === currentSlide && (
-            <img src={slide.images} alt={`Slide ${index}`} className="slide-image" />
+            <Image src={slide.images} alt={`Slide ${index}`} className="slide-image" />
           )}
         </div>
       ))}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className='du-container py-12'>
             <div className='grid md:grid-cols-12 grid-cols-3 sm:grid-cols-6 gap-12'>
                 <div className='col-span-3 flex flex-col gap-6'>
-                    <img src="/kronix.png" className='w-36' />
+                    <Image alt='logo' src="/kronix.png" className='w-36' width="300" height="300" />
                     <p>Get your digital needs with digital uniconGet your digital needs with digital uniconGet your digital needs with digital unicon</p>
                     </div>
 

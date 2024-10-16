@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Portfolio = () => {
 
@@ -34,8 +35,8 @@ const clientData : typeImage[] = [
             <div className='grid grid-cols-12 gap-4'>
                 {
                     clientData.map((e,i)=>(
-                        <div className='col-span-2 border-[2px] border-dotted border-black p-4 rounded-md'>
-                    <Link href="/"><img src={e.image} /></Link>
+                        <div key={i} className='col-span-2 border-[2px] border-dotted border-black p-4 rounded-md'>
+                    <Link href="/"><Image alt='img' src={e.image} /></Link>
                 </div>
                     ))
                 }

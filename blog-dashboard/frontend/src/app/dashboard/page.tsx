@@ -4,20 +4,30 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import BlogForm from "../../components/BlogForm";
 
-const Home = () => {    
-  const [blogs, setBlogs] = useState([]);
-  const [editingBlog, setEditingBlog] = useState(null);
+interface Blog {
+  _id: string;
+  title: string;
+  category: string;
+  author: string;
+  para: string;
+  content: string;
+  image?: string;
+}
+
+const Home: React.FC = () => {    
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [editingBlog, setEditingBlog] = useState<Blog | null>(null);
 
   const fetchBlogs = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/blogs");
+      const { data } = await axios.get<Blog[]>("http://localhost:5000/api/blogs");
       setBlogs(data);
     } catch (error) {
       console.error("Error fetching blogs", error);
     }
   };
 
-  const handleDelete = async id => {
+  const handleDelete = async (id: string) => {
     try {
       await axios.delete(`http://localhost:5000/api/blogs/${id}`);
       fetchBlogs();
