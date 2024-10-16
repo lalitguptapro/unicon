@@ -16,7 +16,7 @@ return (
 <div className='absolute lg:w-[100%] w-[100%] m-auto'>
 <div className='du-container'>
 <div className='lg:grid grid-cols-12 gap-12 py-6 flex justify-between max-w-[550px] m-auto lg:max-w-[100%]'>
-<div className='col-span-6 lg:col-span-2'>   <Image alt='logo' src="/kronix.png" width="300" height="300" />
+<div className='col-span-6 lg:col-span-2'>   <Image alt='logo' src="/kronix.png" width="150" height="150" />
 </div>
 <div className='col-span-7 lg:block hidden'>
 <nav>
