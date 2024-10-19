@@ -43,9 +43,9 @@ return (
     <nav className='max-w-[550px] margin-auto banner-bg m-auto menu-mob'>
     <ul className=''>
     <li className='text-white px-4 py-2 border-b-2'><Link href="/">Home</Link></li>
-    <li className='text-white px-4 py-2 border-b-2'><Link href="/">Home</Link></li>
-    <li className='text-white px-4 py-2 border-b-2'><Link href="/">Home</Link></li>
-    <li className='text-white px-4 py-2 border-b-2'><Link href="/">Home</Link></li>
+    <li className='text-white px-4 py-2 border-b-2'><Link href="/about-us/">About Us</Link></li>
+    <li className='text-white px-4 py-2 border-b-2'><Link href="/contact-us/">Contact Us</Link></li>
+    <li className='text-white px-4 py-2 border-b-2'><Link href="/">home</Link></li>
     </ul>
     </nav></div>
 )}
