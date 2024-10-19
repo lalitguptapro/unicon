@@ -36,6 +36,7 @@ const Meetteam = () => {
             <div className='col-span-3 text-white team-bg'>
             <Image
               src={e.image}
+              alt="Lalit Gupta"
               width='400'
               height='200'
               className='rounded-t-md h-[300px] object-cover'

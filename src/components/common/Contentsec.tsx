@@ -18,7 +18,7 @@ const Contentsec = ({preTitle, headTitle, para}: contentType) => {
             <p>{para}</p>
         </div>
         <div className='col-span-6'>
-            <Image src="/about-us.jpg" width="500" height="500" className='rounded-xl' />
+            <Image alt='Lalit Gupta' src="/about-us.jpg" width="500" height="500" className='rounded-xl' />
         </div>
     </div>
 </div>
