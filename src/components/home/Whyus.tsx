@@ -68,7 +68,7 @@ const Whyus = () => {
         <div className="lg:grid grid-cols-6 items-center gap-12">
           <div className="col-span-3">
             <div className="uppercase text-primary">BENEFITS</div>
-            <h1>The design subscription that connects you to your dream team</h1>
+            <h1>The design subscription that connects you to your dream teams</h1>
           </div>
           <div className="col-span-3 mt-4">
             <p>
