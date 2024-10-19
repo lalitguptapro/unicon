@@ -17,33 +17,33 @@ const Whyus = () => {
   const whyData: Whytype[] = [
     {
       image: "/home/why-icon.png",
-      head: "On-demand requests",
-      para: "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
+      head: "High-Quality Standards",
+      para: "We ensure top-notch quality in every project by following strict guidelines, delivering excellence in every detail.",
     },
     {
       image: "/home/why-icon.png",
-      head: "Fast delivery",
-      para: "We work quickly to deliver the designs you need with precision.",
+      head: "Proactive Time Management",
+      para: "We plan ahead to meet deadlines efficiently, staying on track while anticipating any potential challenges.",
     },
     {
       image: "/home/why-icon.png",
-      head: "High Quality",
-      para: "Ensuring top-notch design quality tailored to your brand.",
+      head: "Continuous Improvement",
+      para: "We believe in growing and refining our processes, always seeking ways to enhance performance and deliver better results.",
     },
     {
       image: "/home/why-icon.png",
-      head: "Unlimited Revisions",
-      para: "Request as many changes as you need to get the perfect design.",
+      head: "Client-Centric Approach",
+      para: "Your needs come first. We focus on personalized solutions, making sure you're always satisfied with the outcome.",
     },
     {
       image: "/home/why-icon.png",
-      head: "Dedicated Support",
-      para: "Our team is here to support you every step of the way.",
+      head: "Clear Milestones and Goals",
+      para: "We set clear, achievable milestones, keeping the journey transparent and the end-goal within reach.",
     },
     {
       image: "/home/why-icon.png",
-      head: "Affordable Plans",
-      para: "Flexible subscription plans that fit your budget.",
+      head: "Resource Optimization",
+      para: "We maximize available resources to ensure efficiency, productivity, and value throughout every project stage.",
     },
   ];
 
@@ -67,12 +67,12 @@ const Whyus = () => {
       <div className="du-container text-white py-24">
         <div className="lg:grid grid-cols-6 items-center gap-12">
           <div className="col-span-3">
-            <div className="uppercase text-primary">BENEFITS</div>
-            <h1>The design subscription that connects you to your dream teams</h1>
+            <div className="uppercase text-primary">WHY CHOOSE US?</div>
+            <h1>Your success, our commitment: quality, reliability, and personalized solutions.</h1>
           </div>
           <div className="col-span-3 mt-4">
             <p>
-              A subscription can alleviate the stress of staffing, managing expenses, or make design calls like a Creative Director. We partner with you to ensure that your design elevates your brand to new levels.
+            Your success is our priority. We provide high-quality, reliable services with personalized solutions, ensuring we meet your unique business needs and help you achieve your goals effectively.
             </p>
             <button className="bg-primary px-8 py-2 text-xl text-black rounded-full mt-6 capitalize">
               know more
