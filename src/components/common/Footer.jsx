@@ -7,33 +7,35 @@ const Footer = () => {
     <div className='footer-bg text-white'>
         <div className='du-container py-12'>
             <div className='grid md:grid-cols-12 grid-cols-3 sm:grid-cols-6 gap-12'>
-                <div className='col-span-3 flex flex-col gap-6'>
+                <div className='col-span-3 flex flex-col gap-4'>
                     <Image alt='logo' src="/kronix.png" className='w-36' width="300" height="300" />
-                    <p>Get your digital needs with digital uniconGet your digital needs with digital uniconGet your digital needs with digital unicon</p>
+                    <p>Transforming your online presence with innovative strategies that drive engagement, growth, and lasting results.</p>
                     </div>
 
-                    <div className='flex flex-col gap-4 col-span-3'>
-                        <div className='font-bold text-[24px]'>Quick Links</div>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
+                    <div className='flex flex-col gap-1 col-span-3'>
+                        <div className='font-bold text-[24px] pb-2'>About</div>
+                        <Link href="/" className='hover:text-primary/70'>Who We Are</Link>
+                        <Link href="/" className='hover:text-primary/70'>Our Clients</Link>
+                        <Link href="/" className='hover:text-primary/70'>Testimonials</Link>
+                        <Link href="/" className='hover:text-primary/70'>Services</Link>
                     </div>
 
-                    <div className='flex flex-col gap-4 col-span-3'>
-                        <div className='font-bold text-[24px]'>Quick Links</div>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
+                    <div className='flex flex-col gap-1 col-span-3'>
+                        <div className='font-bold text-[24px] pb-2'>Digital</div>
+                        <Link href="/" className='hover:text-primary/70'>Website Design</Link>
+                        <Link href="/" className='hover:text-primary/70'>Web Development</Link>
+                        <Link href="/" className='hover:text-primary/70'>SEO Services</Link>
+                        <Link href="/" className='hover:text-primary/70'>Support & Maintenance</Link>
+                        <Link href="/" className='hover:text-primary/70'>Digital Marketing</Link>
+                        <Link href="/" className='hover:text-primary/70'>Mobile Apps</Link>
                     </div>
 
-                    <div className='flex flex-col gap-4 col-span-3'>
-                        <div className='font-bold text-[24px]'>Quick Links</div>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
-                        <Link href="/">home</Link>
+                    <div className='flex flex-col gap-1 col-span-3'>
+                        <div className='font-bold text-[24px] pb-2'>Connect With Us</div>
+                        <Link href="/" className='hover:text-primary/70'>home</Link>
+                        <Link href="/" className='hover:text-primary/70'>home</Link>
+                        <Link href="/" className='hover:text-primary/70'>home</Link>
+                        <Link href="/" className='hover:text-primary/70'>home</Link>
                     </div>
             </div>
         </div>
