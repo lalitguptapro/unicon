@@ -33,7 +33,7 @@ const Meetteam = () => {
       <div className='grid grid-cols-12 gap-12'>
        {
         teamData.map((e,i)=>(
-            <div className='col-span-3 text-white team-bg'>
+            <div className='col-span-3 text-white team-bg' key={i}>
             <Image
               src={e.image}
               alt="Lalit Gupta"
