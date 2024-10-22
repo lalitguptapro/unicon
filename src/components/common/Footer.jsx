@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='du-container py-12'>
             <div className='grid md:grid-cols-12 grid-cols-3 sm:grid-cols-6 gap-12'>
                 <div className='col-span-3 flex flex-col gap-4'>
-                    <Image alt='logo' src="/kronix.png" className='w-36' width="300" height="300" />
+                    <Image alt='logo' src="/transparent-logo.png" className='w-16' width="300" height="300" />
                     <p>Transforming your online presence with innovative strategies that drive engagement, growth, and lasting results.</p>
                     </div>
 
