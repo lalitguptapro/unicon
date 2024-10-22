@@ -5,7 +5,7 @@ const Ctawhitebg = () => {
     <div className='bg-white'>
         <div className='du-container text-center py-16'>
             <h2 className="">Get Started Today!</h2>
-            <p>We're here to create your digital experinece</p>
+            <p>We &apos; re here to create your digital experinece</p>
         </div>
     </div>
   )
