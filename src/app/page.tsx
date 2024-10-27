@@ -1,5 +1,4 @@
 import Aboutus from '@/components/home/Aboutus'
-import Contactus from '@/components/home/Contactus'
 import Banner from '@/components/home/Banner'
 import Blog from '@/components/home/Blog'
 import Capabilities from '@/components/home/Capabilities'
@@ -20,7 +19,6 @@ const page = () => {
     <Banner />
     <Clients />
     <Aboutus />
-    <Contactus />
     <Services />
     {/* <Portfolio /> */}
     <Capabilities />
