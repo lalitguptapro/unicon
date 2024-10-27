@@ -1,17 +1,19 @@
 "use client"; // Add this at the top to make it a Client Component
 
-import { useState } from "react"; // Import useState for managing state
+import { useState } from "react";
 import Pagebanner from "@/components/common/Pagebanner";
 import SEO from "@/components/common/SEO";
 
 const Page = () => {
   const [showPopup, setShowPopup] = useState(false); // State to control the popup
 
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    
+
+    const form = e.currentTarget as HTMLFormElement;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+
     // Simple email validation regex
-    const email = e.target.email.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
@@ -26,9 +28,9 @@ const Page = () => {
       },
       body: JSON.stringify({
         access_key: "8ac6fa09-2bfb-47f0-932b-6ab944e50164", // Replace with your actual access key
-        name: e.target.name.value,
-        email: e.target.email.value,
-        message: e.target.message.value,
+        name: (form.elements.namedItem("name") as HTMLInputElement).value,
+        email,
+        message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
       }),
     });
 
@@ -36,55 +38,55 @@ const Page = () => {
     if (result.success) {
       console.log(result);
       setShowPopup(true); // Show the popup on success
-      e.target.reset(); // Optionally clear the form
+      form.reset(); // Optionally clear the form
     }
   }
 
   return (
     <div>
       <SEO
-        title='Home - Your Digital Marketing Agency'
-        description='We provide web design, digital marketing, and SEO services tailored to your business needs.'
-        keywords='web design, digital marketing, SEO, marketing agency'
-        ogImage='/images/home-og-image.png'
-        ogType='website'
+        title="Home - Your Digital Marketing Agency"
+        description="We provide web design, digital marketing, and SEO services tailored to your business needs."
+        keywords="web design, digital marketing, SEO, marketing agency"
+        ogImage="/images/home-og-image.png"
+        ogType="website"
       />
       <main>
-        <Pagebanner pageTitle='Contact Us' />
+        <Pagebanner pageTitle="Contact Us" />
 
         {/* Contact Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor='name' className="block font-medium">Name</label>
+            <label htmlFor="name" className="block font-medium">Name</label>
             <input
-              type='text'
-              name='name'
+              type="text"
+              name="name"
               required
-              placeholder='Your name'
+              placeholder="Your name"
               className="mt-1 p-2 border border-gray-300 rounded w-full"
             />
           </div>
           <div>
-            <label htmlFor='email' className="block font-medium">Email</label>
+            <label htmlFor="email" className="block font-medium">Email</label>
             <input
-              type='email'
-              name='email'
+              type="email"
+              name="email"
               required
-              placeholder='email@example.com'
+              placeholder="email@example.com"
               className="mt-1 p-2 border border-gray-300 rounded w-full"
             />
           </div>
           <div>
-            <label htmlFor='message' className="block font-medium">Message</label>
+            <label htmlFor="message" className="block font-medium">Message</label>
             <textarea
-              name='message'
+              name="message"
               required
-              placeholder='Enter Message'
+              placeholder="Enter Message"
               className="mt-1 p-2 border border-gray-300 rounded w-full"
             ></textarea>
           </div>
           <button
-            type='submit'
+            type="submit"
             className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
           >
             Submit Form
