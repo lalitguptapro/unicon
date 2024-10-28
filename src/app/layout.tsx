@@ -35,7 +35,6 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
       <Head>
         <title>{typeof metadata.title === 'string' ? metadata.title : ''}</title>
         <meta name="description" content={typeof metadata.description === 'string' ? metadata.description : ''} />
-        <meta name="google-site-verification" content="MugTmYFPPG22wGWnDjAARRtVPPtzjQEfvBIx8XYUMuo" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />

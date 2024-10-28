@@ -15,6 +15,7 @@ const page = () => {
     <Head>
       <title>Your Company Name | Innovative Solutions and Services</title>
       <meta name="description" content="Discover our innovative solutions, expert services, and client success stories. Learn how we can help your business thrive." />
+      <meta name="google-site-verification" content="MugTmYFPPG22wGWnDjAARRtVPPtzjQEfvBIx8XYUMuo" />
     </Head>
     <Banner />
     <Clients />
